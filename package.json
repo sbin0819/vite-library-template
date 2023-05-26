@@ -27,6 +27,6 @@
     "commitizen": "^4.3.0"
   },
   "lint-staged": {
-    "*": "pnpm run format:fix"
+    "*": "pnpm format:fix"
   }
 }
