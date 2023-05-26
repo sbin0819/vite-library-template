@@ -1,9 +1,9 @@
-import { MyButton } from './lib';
+import { MyButton } from './lib'
 
 export default function App() {
   return (
     <div>
       <MyButton />
     </div>
-  );
+  )
 }
