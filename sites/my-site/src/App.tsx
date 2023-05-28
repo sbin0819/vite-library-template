@@ -1,4 +1,4 @@
-import { MyButton } from 'my-lib'
+import { MyButton } from 'vite-lib-sample'
 
 export default function App() {
   return (

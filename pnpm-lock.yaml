@@ -29,7 +29,7 @@ importers:
         specifier: 3.1.3
         version: 3.1.3(prettier@2.5.1)
 
-  packages/my-lib:
+  packages/vite-lib-sample:
     dependencies:
       react:
         specifier: ^18.2.0
@@ -113,15 +113,15 @@ importers:
 
   sites/my-site:
     dependencies:
-      my-lib:
-        specifier: '*'
-        version: link:../../packages/my-lib
       react:
         specifier: ^18.2.0
         version: 18.2.0
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      vite-lib-sample:
+        specifier: '*'
+        version: link:../../packages/vite-lib-sample
     devDependencies:
       '@types/react':
         specifier: ^18.0.28
@@ -2023,13 +2023,13 @@ packages:
       '@types/node': 20.2.4
       chalk: 4.1.2
       cosmiconfig: 8.1.3
-      cosmiconfig-typescript-loader: 4.3.0(@types/node@20.2.4)(cosmiconfig@8.1.3)(ts-node@10.9.1)(typescript@4.9.3)
+      cosmiconfig-typescript-loader: 4.3.0(@types/node@20.2.4)(cosmiconfig@8.1.3)(ts-node@10.9.1)(typescript@5.0.4)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1(@types/node@20.2.4)(typescript@4.9.3)
-      typescript: 4.9.3
+      ts-node: 10.9.1(@types/node@20.2.4)(typescript@5.0.4)
+      typescript: 5.0.4
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -6995,7 +6995,7 @@ packages:
       }
     dev: true
 
-  /cosmiconfig-typescript-loader@4.3.0(@types/node@20.2.4)(cosmiconfig@8.1.3)(ts-node@10.9.1)(typescript@4.9.3):
+  /cosmiconfig-typescript-loader@4.3.0(@types/node@20.2.4)(cosmiconfig@8.1.3)(ts-node@10.9.1)(typescript@5.0.4):
     resolution:
       {
         integrity: sha512-NTxV1MFfZDLPiBMjxbHRwSh5LaLcPMwNdCutmnHJCKoVnlvldPWlllonKwrsRJ5pYZBIBGRWWU2tfvzxgeSW5Q==,
@@ -7009,8 +7009,8 @@ packages:
     dependencies:
       '@types/node': 20.2.4
       cosmiconfig: 8.1.3
-      ts-node: 10.9.1(@types/node@20.2.4)(typescript@4.9.3)
-      typescript: 4.9.3
+      ts-node: 10.9.1(@types/node@20.2.4)(typescript@5.0.4)
+      typescript: 5.0.4
 
   /cosmiconfig@7.1.0:
     resolution:
@@ -12982,7 +12982,7 @@ packages:
     dependencies:
       lilconfig: 2.1.0
       postcss: 8.4.23
-      ts-node: 10.9.1(@types/node@20.2.4)(typescript@4.9.3)
+      ts-node: 10.9.1(@types/node@20.2.4)(typescript@5.0.4)
       yaml: 2.3.0
     dev: true
 
@@ -15168,7 +15168,7 @@ packages:
       code-block-writer: 12.0.0
     dev: true
 
-  /ts-node@10.9.1(@types/node@20.2.4)(typescript@4.9.3):
+  /ts-node@10.9.1(@types/node@20.2.4)(typescript@5.0.4):
     resolution:
       {
         integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==,
@@ -15197,7 +15197,7 @@ packages:
       create-require: 1.1.1
       diff: 4.0.2
       make-error: 1.3.6
-      typescript: 4.9.3
+      typescript: 5.0.4
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
@@ -15335,6 +15335,7 @@ packages:
       }
     engines: { node: '>=4.2.0' }
     hasBin: true
+    dev: true
 
   /typescript@5.0.2:
     resolution:
@@ -15352,7 +15353,6 @@ packages:
       }
     engines: { node: '>=12.20' }
     hasBin: true
-    dev: true
 
   /uglify-js@3.17.4:
     resolution:
