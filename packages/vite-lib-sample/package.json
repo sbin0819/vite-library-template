@@ -1,6 +1,6 @@
 {
-  "name": "@sbin/my-lib",
-  "version": "0.0.1",
+  "name": "vite-lib-sample",
+  "version": "0.0.3",
   "type": "module",
   "author": {
     "name": "Subin Ha",
@@ -48,13 +48,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/my-lib.umd.js",
-  "module": "./dist/my-lib.es.js",
+  "main": "./dist/vite-lib-sample.umd.js",
+  "module": "./dist/vite-lib-sample.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.es.js",
-      "require": "./dist/my-lib.umd.js"
+      "import": "./dist/vite-lib-sample.es.js",
+      "require": "./dist/vite-lib-sample.umd.js"
     }
   }
 }
